@@ -125,6 +125,12 @@
     "icon": "./images/links/streameast.png",
     "section": "streaming"
   },
+  {
+    "name": "soccer9",
+    "url": "https://soccer9.sportshub.stream/",
+    "icon": "./images/links/soccer.png",
+    "section": "streaming"
+  },
 
 
 
@@ -144,18 +150,6 @@
     "name": "SIS - RIT",
     "url": "https://campus.ps.rit.edu/psc/RITXCPRD/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL?",
     "icon": "./images/rit.svg",
-    "section": "school"
-  },
-  {
-    "name": "Google Docs",
-    "url": "https://campus.ps.rit.edu/psc/RITXCPRD/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL?",
-    "icon": "./images/links/docs.png",
-    "section": "school"
-  },
-  {
-    "name": "quizlet",
-    "url": "https://quizlet.com/ajc44096/sets",
-    "icon": "./images/links/quizlet.svg",
     "section": "school"
   },
   
@@ -204,6 +198,12 @@
 
 
   {
+    "name": "Penn. Voter StoryMap",
+    "url": "https://storymaps.arcgis.com/stories/f7acca3d29844562861fde45688bdbc7",
+    "icon": "./images/links/pennsylvania.png",
+    "section": "project"
+  },
+  {
     "name": "iSchool website",
     "url": "https://people.rit.edu/~ajc4409/iste340/project2/",
     "icon": "./images/rit.svg",
@@ -242,9 +242,37 @@
     "icon": "./images/links/refactoringguru.png",
     "section": "helpful"
   },
+  {
+    "name": "quicktype",
+    "url": "https://app.quicktype.io/",
+    "icon": "./images/links/quicktype.svg",
+    "section": "helpful"
+  },
+  {
+    "name": "easings.net",
+    "url": "https://easings.net/",
+    "icon": "./images/links/easings.png",
+    "section": "helpful"
+  },
+  {
+    "name": "lucid chart",
+    "url": "https://lucid.app/documents#/home?folder_id=recent",
+    "icon": "./images/links/lucid.svg",
+    "section": "helpful"
+  },
 
-
-
+  {
+    "name": "kotlin",
+    "url": "https://kotlinlang.org/docs/home.html",
+    "icon": "./images/links/kotlin.svg",
+    "section": "doc"
+  },
+  {
+    "name": "swift",
+    "url": "https://developer.apple.com/documentation/swift",
+    "icon": "./images/links/swift.png",
+    "section": "doc"
+  },
   {
     "name": "flutter",
     "url": "https://docs.flutter.dev/",
@@ -256,17 +284,6 @@
     "url": "https://mui.com/material-ui/getting-started/",
     "icon": "./images/links/mui.png",
     "section": "doc"
-  },  
-  {
-    "name": "tailwind",
-    "url": "https://tailwindui.com/components",
-    "icon": "./images/links/tailwind.png",
-    "section": "doc"
-  },
-  {
-    "name": "daisyUI",
-    "url": "https://daisyui.com/components/",
-    "icon": "./images/links/daisyui.png",
-    "section": "doc"
   }
+
 ]

@@ -8,8 +8,8 @@
  */
 
 const container = document.getElementById('weatherContainer');
-const defaultCoords = { latitude: 43.085556, longitude: -77.656912 }; // coordinates of rit campus
-const apiKey = 'ecc342730e0d4e348b39e95d1a879fa6'; // openCage API key
+const defaultCoords = { latitude: 43.085556, longitude: -77.656912 }; //coordinates of rit campus
+const apiKey = 'ecc342730e0d4e348b39e95d1a879fa6'; //openCage API key
 const weatherCodeMap = {
     0: 'Clear sky',
     1: 'Mainly clear',
@@ -92,9 +92,6 @@ function checkWeather() {
 
 /**
  * function to build the hourly API URL with given coordinates
- * @param {number} latitude - Latitude of the location
- * @param {number} longitude - Longitude of the location
- * @returns {string} - The complete API URL
  */
 function buildHourlyApiUrl(latitude, longitude) {
     return `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=weather_code&daily=uv_index_max,precipitation_probability_max&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch&timezone=America%2FNew_York&forecast_days=1`;
@@ -102,13 +99,11 @@ function buildHourlyApiUrl(latitude, longitude) {
 
 /**
  * function to build the daily API URL with given coordinates
- * @param {number} latitude - Latitude of the location
- * @param {number} longitude - Longitude of the location
- * @returns {string} - The complete API URL
  */
 function buildCurrentApiUrl(latitude, longitude) {
     return `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,rain,snowfall,cloud_cover,wind_speed_10m,wind_direction_10m,wind_gusts_10m,weathercode&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch&timeformat=unixtime&timezone=America%2FNew_York&forecast_days=1`;
 }
+
 /**
  * Retrieves the human-readable name of a location based on provided latitude and longitude.
  * @param {number} latitude - latitude of location
@@ -157,31 +152,31 @@ async function fetchWeather(latitude, longitude) {
         const currentData = await currentResponse.json();
         const currentWeather = currentData.current;
         
+        let locName
         
-        
-        // get weather code
+        //get weather code
         const weatherCode = currentWeather.weathercode;
         const weatherDescription = weatherCodeMap[weatherCode] || 'Unknown weather code';
 
-        // get temperature
+        //get temperature
         const temperature = currentWeather.temperature_2m;
         const apparentTemperature = currentWeather.apparent_temperature;
         const humidity = currentWeather.relative_humidity_2m;
 
-        // get precipitation
+        //get precipitation
         const precipitationProbability = hourlyWeather.precipitation_probability_max[0];
         const rain = currentWeather.rain;
         const snowfall = currentWeather.snowfall;
 
-        // get wind & clouds
+        //get wind & clouds
         const clouds = currentWeather.cloud_cover;
         const windSpeed = currentWeather.wind_speed_10m;
         const windDirection = degreesToDirection(currentWeather.wind_direction_10m);
         
-        // get UV index
+        //get UV index
         const UVIndex = hourlyWeather.uv_index_max[0];
 
-        // create and append new div elements
+        //create and append new div elements
         createAndAppendDiv('code', `${weatherDescription}`, 'weatherCode');
         
         createAndAppendDiv('weatherData temperature', `${temperature}˚F`, 'weatherTemp');
@@ -196,10 +191,22 @@ async function fetchWeather(latitude, longitude) {
         createAndAppendDiv('weatherData windSpeed', `${windSpeed} ${windDirection}`, 'weatherWindSpeed');
         createAndAppendDiv('weatherData UVIndex', `${UVIndex}`, 'weatherUVIndex');
         
-        // get location name
+        //get location name
         getLocationName(latitude, longitude).then(locationName => {
-            createAndAppendDiv('locationName', `${locationName}`, 'weatherLocation');
+            if (locationName.length > 16) {
+                locName = locationName.slice(0, 15) + '...';
+            } else {
+                locName = locationName;
+            }
+            
+            createAndAppendDiv('locationName', `${locName}`, 'weatherLocation');
+            
+            console.log(`Weather data obtained for ${locName}, courtesy of open-meteo.com.`)
         });
+        
+        console.group(`Temperature is ${temperature}ºF but it feels like ${apparentTemperature}. There is a ${precipitationProbability}% change for precipitation, and the wind is blowing at ${windSpeed}mph ${windDirection}.`)
+        
+        
     } catch (error) {
         console.error('Error fetching weather data:', error);
     }

@@ -7,7 +7,7 @@
  * last updated in v1.1
  */
 
-import { fetchRandomVerse } from './bible.js';
+//import { fetchRandomVerse } from './bible.js';
 
 /**
  * Creates a delay for a specified amount of time.
@@ -49,9 +49,10 @@ function typeString(id, text, speed) {
 async function runTyping() {
   await typeString('title', 'Welcome home, Austin.', 75); // Typing the welcome message
   await delay(2000); // Pause for 2 seconds (2000 milliseconds)
-  await typeString('bible', 'Read the Word: ', 50); // Typing the prompt
-  await fetchRandomVerse().then(verse => typeString('bible', verse, 15)); // Typing the Bible verse
+  
+  // await typeString('bible', 'Read the Word: ', 50); // Typing the prompt
+  // await fetchRandomVerse().then(verse => typeString('bible', verse, 15)); // Typing the Bible verse
 }
 
-// Start the typing animation
+//start the typing animation
 runTyping();
