@@ -193,8 +193,8 @@ async function fetchWeather(latitude, longitude) {
         
         //get location name
         getLocationName(latitude, longitude).then(locationName => {
-            if (locationName.length > 16) {
-                locName = locationName.slice(0, 15) + '...';
+            if (locationName.length > 15) {
+                locName = locationName.slice(0, 14) + '...';
             } else {
                 locName = locationName;
             }
