@@ -42,13 +42,13 @@
 
 
   {
-    "name": "gmail - ajclifton01",
+    "name": "gmail - ajc4409",
     "url": "https://mail.google.com/mail/u/0/#inbox",
     "icon": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
     "section": "email"
   },
   {
-    "name": "gmail - ajc4409",
+    "name": "gmail - ajclifton01",
     "url": "https://mail.google.com/mail/u/1/#inbox",
     "icon": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
     "section": "email"
@@ -165,6 +165,18 @@
     "name": "indeed",
     "url": "https://profile.indeed.com/?hl=en_US&co=US&from=gnav-homepage",
     "icon": "./images/links/indeed.svg",
+    "section": "work"
+  },
+  {
+    "name": "zip recruiter",
+    "url": "https://www.ziprecruiter.com/jobseeker/home",
+    "icon": "./images/links/ziprecruiter.svg",
+    "section": "work"
+  },
+  {
+    "name": "glassdoor",
+    "url": "https://profile.indeed.com/?hl=en_US&co=US&from=gnav-homepage",
+    "icon": "./images/links/glassdoor.svg",
     "section": "work"
   },
   {
