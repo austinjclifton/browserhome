@@ -7,26 +7,28 @@
  * last updated in v1.1
  */
 
-const cryptoIds = ['btc-bitcoin', 'eth-ethereum', 'xrp-xrp', 'sol-solana', 'usdc-usd-coin', 'ada-cardano', 'doge-dogecoin', 'dot-polkadot'];
+// crypto ids to load
+const cryptoIds = ['xrp-xrp', 'btc-bitcoin', 'eth-ethereum', 'sol-solana', 'usdc-usd-coin'];
 
-/**
- * fetches cryptocurrency data for each ID in the cryptoIds array and appends it to the container on-load.
- */
-cryptoIds.forEach(id => {
-  fetch(`https://api.coinpaprika.com/v1/tickers/${id}`)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`Crypto fetch failed for ${id}.`);
-      }
-      return response.json();
-    })
-    .then(data => {
-      appendCryptoBlock(data);
-    })
-    .catch(error => {
-      console.error('There has been a problem with your fetch operation:', error);
-    });
-});
+// load crypto data
+(async function load() {
+  const results = await Promise.allSettled(
+    cryptoIds.map(id =>
+      fetch(`https://api.coinpaprika.com/v1/tickers/${id}`)
+        .then(r => { if (!r.ok) throw new Error(id); return r.json(); })
+    )
+  );
+
+  // preserve order of crypto array by iterating cryptoIds, not completion order
+  results.forEach((res, i) => {
+    if (res.status === 'fulfilled') {
+      appendCryptoBlock(res.value);
+    } else {
+      console.error(`Failed to load ${cryptoIds[i]}`, res.reason);
+    }
+  });
+})();
+
 
 /**
  * function used to create and append a crypto block to the container.

@@ -24,19 +24,25 @@
     "name": "coinbase",
     "url": "https://www.coinbase.com/home",
     "icon": "./images/links/coinbase.svg",
-    "section": "crypto"
+    "section": "banks"
   },
   {
-    "name": "robinhood",
-    "url": "https://robinhood.com/",
-    "icon": "./images/links/robinhood.svg",
-    "section": "crypto"
+    "name": "keybank",
+    "url": "https://www.key.com/personal/index.html",
+    "icon": "./images/links/keybank.svg",
+    "section": "banks"
   },
   {
-    "name": "binance",
-    "url": "https://www.binance.us/dashboard",
-    "icon": "./images/links/binance.png",
-    "section": "crypto"
+    "name": "discover",
+    "url": "https://www.discover.com/",
+    "icon": "./images/links/discover.svg",
+    "section": "banks"
+  },
+  {
+    "name": "citibank - visa",
+    "url": "https://www.citi.com/",
+    "icon": "./images/links/citi.webp",
+    "section": "banks"
   },
 
 
@@ -44,20 +50,53 @@
   {
     "name": "gmail - ajclifton01",
     "url": "https://mail.google.com/mail/u/0/#inbox",
-    "icon": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
+    "icon": "./images/links/gmail.svg",
     "section": "email"
   },
   {
     "name": "gmail - ajc4409",
     "url": "https://mail.google.com/mail/u/1/#inbox",
-    "icon": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
+    "icon": "./images/links/gmail.svg",
+    "section": "email"
+  },
+  {
+    "name": "gmail - revolvingrodent",
+    "url": "https://mail.google.com/mail/u/2/#inbox",
+    "icon": "./images/links/gmail.svg",
     "section": "email"
   },
   {
     "name": "gmail - ajcbusiness0",
-    "url": "https://mail.google.com/mail/u/2/#inbox",
-    "icon": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
+    "url": "https://mail.google.com/mail/u/3/#inbox",
+    "icon": "./images/links/gmail.svg",
     "section": "email"
+  },
+  {
+    "name": "proton - austinjclifton",
+    "url": "https://mail.proton.me/u/1/inbox",
+    "icon": "./images/links/proton.svg",
+    "section": "email"
+  },
+
+
+
+  {
+    "name": "sleeper",
+    "url": "https://sleeper.com/leagues/1223368749323653120/predraft",
+    "icon": "./images/links/sleeper.jpeg",
+    "section": "fantasy"
+  },
+  {
+    "name": "espn",
+    "url": "https://www.espn.com/fantasy/",
+    "icon": "./images/links/espn.svg",
+    "section": "fantasy"
+  },
+  {
+    "name": "premier league",
+    "url": "https://fantasy.premierleague.com/my-team",
+    "icon": "./images/links/premier_league.png",
+    "section": "fantasy"
   },
 
 
@@ -90,9 +129,9 @@
 
 
   {
-    "name": "sling",
-    "url": "https://watch.sling.com/dashboard/grid_guide/grid_guide_sports",
-    "icon": "./images/links/sling.svg",
+    "name": "streameast",
+    "url": "https://the.streameast.app/v11",
+    "icon": "./images/links/streameast.png",
     "section": "streaming"
   },
   {
@@ -117,18 +156,6 @@
     "name": "netflix",
     "url": "https://www.netflix.com/login",
     "icon": "./images/links/netflix.svg",
-    "section": "streaming"
-  },
-  {
-    "name": "streameast",
-    "url": "https://the.streameast.app/v11",
-    "icon": "./images/links/streameast.png",
-    "section": "streaming"
-  },
-  {
-    "name": "soccer9",
-    "url": "https://soccer9.sportshub.stream/",
-    "icon": "./images/links/soccer.png",
     "section": "streaming"
   },
 
@@ -274,15 +301,21 @@
   },
 
   {
-    "name": "kotlin",
-    "url": "https://kotlinlang.org/docs/home.html",
-    "icon": "./images/links/kotlin.svg",
-    "section": "doc"
-  },
-  {
     "name": "swift",
     "url": "https://developer.apple.com/documentation/swift",
     "icon": "./images/links/swift.png",
+    "section": "doc"
+  },
+  {
+    "name": "swiftUI",
+    "url": "https://developer.apple.com/documentation/swiftui",
+    "icon": "./images/links/swift.png",
+    "section": "doc"
+  },
+  {
+    "name": "kotlin",
+    "url": "https://kotlinlang.org/docs/home.html",
+    "icon": "./images/links/kotlin.svg",
     "section": "doc"
   },
   {

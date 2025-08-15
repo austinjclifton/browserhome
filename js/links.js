@@ -10,16 +10,17 @@ const linksContainer = document.getElementById('quickLinksContainer');
 // Object map to associate section names with their corresponding class names
 const sectionClassMap = {
     'general': 'generalLinks',
+    'banks': 'bankLinks',
+    'email': 'emailLinks',
+    'fantasy': 'fantasyLinks',
     'code': 'codeLinks',
     'school': 'schoolLinks',
+    'streaming': 'streamingLinks',
     'work': 'workLinks',
-    'email': 'emailLinks',
-    'helpful': 'helpfulLinks',
     'games': 'gamesLinks',
-    'crypto': 'cryptoLinks',
-    'doc': 'docLinks',
     'project': 'projectLinks',
-    'streaming': 'streamingLinks'
+    'helpful': 'helpfulLinks',
+    'doc': 'docLinks'
 };
 
 /**

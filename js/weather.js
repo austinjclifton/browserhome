@@ -3,8 +3,8 @@
  * 
  * JavaScript for the Weather Container
  * Uses fetch() to retrieve API info
- * courtesy of open-meteo.com (free)
- * last updated in v1.1
+ * Courtesy of open-meteo.com (free)
+ * Last updated in v1.1
  */
 
 const container = document.getElementById('weatherContainer');
