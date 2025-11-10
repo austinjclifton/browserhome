@@ -82,8 +82,8 @@ body {
     }
 }
 
-/* Responsive: Tablets and smaller (1300px and below) */
-@media (max-width: 1300px) {
+/* Responsive: Tablets and smaller (1300px and below) OR short height (700px and below) */
+@media (max-width: 1300px), (max-height: 700px) {
     .header {
         flex-direction: column;
         justify-content: center;
@@ -208,34 +208,3 @@ body {
     }
 }
 
-/* Responsive: Short height - arrange widgets in a row */
-@media (max-height: 700px) {
-    .container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 2vh;
-        padding: 2vh;
-        overflow-x: auto;
-    }
-
-    .widget {
-        flex-shrink: 0;
-        width: 350px;
-        height: auto;
-        min-height: 45vh;
-        max-height: 50vh;
-    }
-
-    #weatherContainer,
-    .cryptoContainer,
-    .quickLinksContainer {
-        width: 350px !important;
-        height: 325px !important;
-        min-height: 325px !important;
-        max-height: 325px !important;
-        flex-shrink: 0;
-        flex-grow: 0;
-    }
-}
