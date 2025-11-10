@@ -1,0 +1,344 @@
+[
+  {
+    "name": "chatGPT",
+    "url": "https://chat.openai.com/",
+    "icon": "./images/links/chatgpt.svg",
+    "section": "general"
+  },
+  {
+    "name": "youtube",
+    "url": "https://www.youtube.com/",
+    "icon": "./images/links/youtube.png",
+    "section": "general"
+  },
+
+  {
+    "name": "gmail - ajclifton01",
+    "url": "https://mail.google.com/mail/u/0/#inbox",
+    "icon": "./images/links/gmail.svg",
+    "section": "email"
+  },
+  {
+    "name": "gmail - ajc4409",
+    "url": "https://mail.google.com/mail/u/1/#inbox",
+    "icon": "./images/links/gmail.svg",
+    "section": "email"
+  },
+  {
+    "name": "gmail - revolvingrodent",
+    "url": "https://mail.google.com/mail/u/2/#inbox",
+    "icon": "./images/links/gmail.svg",
+    "section": "email"
+  },
+  {
+    "name": "gmail - ajcbusiness0",
+    "url": "https://mail.google.com/mail/u/3/#inbox",
+    "icon": "./images/links/gmail.svg",
+    "section": "email"
+  },
+  {
+    "name": "gmail - ajcdev0",
+    "url": "https://mail.google.com/mail/u/4/#inbox",
+    "icon": "./images/links/gmail.svg",
+    "section": "email"
+  },
+  {
+    "name": "proton - austinjclifton",
+    "url": "https://mail.proton.me/u/1/inbox",
+    "icon": "./images/links/proton.svg",
+    "section": "email"
+  },
+
+  {
+    "name": "streameast",
+    "url": "https://v2.streameast.ga/",
+    "icon": "./images/links/streameast.png",
+    "section": "streaming"
+  },
+  {
+    "name": "sling",
+    "url": "https://watch.sling.com/dashboard/home",
+    "icon": "./images/links/sling.png",
+    "section": "streaming"
+  },
+  {
+    "name": "peacock",
+    "url": "https://www.peacocktv.com/watch/home",
+    "icon": "./images/links/peacock.svg",
+    "section": "streaming"
+  },
+  {
+    "name": "paramount+",
+    "url": "https://www.paramountplus.com/home/",
+    "icon": "./images/links/paramount.svg",
+    "section": "streaming"
+  },
+  {
+    "name": "hulu",
+    "url": "https://www.hulu.com/hub/home",
+    "icon": "./images/links/hulu.svg",
+    "section": "streaming"
+  },
+  {
+    "name": "netflix",
+    "url": "https://www.netflix.com/login",
+    "icon": "./images/links/netflix.svg",
+    "section": "streaming"
+  },
+
+  {
+    "name": "github",
+    "url": "https://github.com/austinjclifton",
+    "icon": "./images/links/github.svg",
+    "section": "code"
+  },
+  {
+    "name": "exercism",
+    "url": "https://exercism.org/dashboard",
+    "icon": "./images/links/exercism.svg",
+    "section": "code"
+  },
+  {
+    "name": "jschallenger",
+    "url": "https://jschallenger.com/dashboard/",
+    "icon": "./images/links/code.png",
+    "section": "code"
+  },
+  {
+    "name": "sqlbolt",
+    "url": "https://sqlbolt.com/",
+    "icon": "./images/links/sqlbolt.png",
+    "section": "code"
+  },
+  {
+    "name": "leetcode",
+    "url": "https://leetcode.com/problemset/",
+    "icon": "./images/links/leetcode.png",
+    "section": "code"
+  },
+
+  {
+    "name": "myCourses",
+    "url": "https://mycourses.rit.edu/d2l/home",
+    "icon": "./images/rit.svg",
+    "section": "school"
+  },
+  {
+    "name": "SIS - RIT",
+    "url": "https://campus.ps.rit.edu/psc/RITXCPRD/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL?",
+    "icon": "./images/rit.svg",
+    "section": "school"
+  },
+
+  {
+    "name": "linkedin",
+    "url": "https://www.linkedin.com/in/austinjclifton/",
+    "icon": "./images/links/linkedin.svg",
+    "section": "work"
+  },
+  {
+    "name": "indeed",
+    "url": "https://profile.indeed.com/?hl=en_US&co=US&from=gnav-homepage",
+    "icon": "./images/links/indeed.svg",
+    "section": "work"
+  },
+  {
+    "name": "zip recruiter",
+    "url": "https://www.ziprecruiter.com/jobseeker/home",
+    "icon": "./images/links/ziprecruiter.svg",
+    "section": "work"
+  },
+  {
+    "name": "glassdoor",
+    "url": "https://profile.indeed.com/?hl=en_US&co=US&from=gnav-homepage",
+    "icon": "./images/links/glassdoor.svg",
+    "section": "work"
+  },
+  {
+    "name": "career connect rit",
+    "url": "https://rit-csm.symplicity.com/students/app/jobs/discover",
+    "icon": "./images/rit.svg",
+    "section": "work"
+  },
+
+  {
+    "name": "coinbase",
+    "url": "https://www.coinbase.com/home",
+    "icon": "./images/links/coinbase.svg",
+    "section": "banks"
+  },
+  {
+    "name": "keybank",
+    "url": "https://www.key.com/personal/index.html",
+    "icon": "./images/links/keybank.svg",
+    "section": "banks"
+  },
+  {
+    "name": "discover",
+    "url": "https://www.discover.com/",
+    "icon": "./images/links/discover.svg",
+    "section": "banks"
+  },
+  {
+    "name": "citibank - visa",
+    "url": "https://www.citi.com/",
+    "icon": "./images/links/citi.webp",
+    "section": "banks"
+  },
+
+  {
+    "name": "sleeper",
+    "url": "https://sleeper.com/leagues/1223368749323653120/predraft",
+    "icon": "./images/links/sleeper.jpeg",
+    "section": "fantasy"
+  },
+  {
+    "name": "espn",
+    "url": "https://www.espn.com/fantasy/",
+    "icon": "./images/links/espn.svg",
+    "section": "fantasy"
+  },
+
+  {
+    "name": "chess.com",
+    "url": "https://www.chess.com/home",
+    "icon": "./images/links/chess.svg",
+    "section": "games"
+  },
+  {
+    "name": "sporcle",
+    "url": "https://www.sporcle.com/",
+    "icon": "./images/links/sporcle.png",
+    "section": "games"
+  },
+  {
+    "name": "geoguessr",
+    "url": "https://www.geoguessr.com/",
+    "icon": "./images/links/geoguessr.png",
+    "section": "games"
+  },
+
+  {
+    "name": "Penn. Voter StoryMap",
+    "url": "https://storymaps.arcgis.com/stories/f7acca3d29844562861fde45688bdbc7",
+    "icon": "./images/links/pennsylvania.png",
+    "section": "project"
+  },
+  {
+    "name": "iSchool website",
+    "url": "https://people.rit.edu/~ajc4409/iste340/project2/",
+    "icon": "./images/rit.svg",
+    "section": "project"
+  },
+  {
+    "name": "hometown website",
+    "url": "https://people.rit.edu/~ajc4409/ISTE240/project1/index.html",
+    "icon": "./images/links/tree.png",
+    "section": "project"
+  },
+  {
+    "name": "world cup website",
+    "url": "https://people.rit.edu/ajc4409/worldCupWebsite/",
+    "icon": "./images/links/cup.png",
+    "section": "project"
+  },
+
+  {
+    "name": "brandlogos",
+    "url": "https://brandlogos.net/",
+    "icon": "./images/links/brandlogos.png",
+    "section": "helpful"
+  },
+  {
+    "name": "tech icons",
+    "url": "https://techicons.dev/",
+    "icon": "./images/links/tech_icons.svg",
+    "section": "helpful"
+  },
+  {
+    "name": "flaticon",
+    "url": "https://www.flaticon.com/icons",
+    "icon": "./images/links/flaticon.png",
+    "section": "helpful"
+  },
+  {
+    "name": "VectorLogo Zone",
+    "url": "https://www.vectorlogo.zone/",
+    "icon": "./images/links/vectorlogozone.svg",
+    "section": "helpful"
+  },
+  {
+    "name": "refactoring guru",
+    "url": "https://refactoring.guru/design-patterns",
+    "icon": "./images/links/refactoringguru.png",
+    "section": "helpful"
+  },
+  {
+    "name": "easings.net",
+    "url": "https://easings.net/",
+    "icon": "./images/links/easings.png",
+    "section": "helpful"
+  },
+
+  {
+    "name": "react",
+    "url": "https://react.dev/reference/react",
+    "icon": "./images/links/react.svg",
+    "section": "doc"
+  },
+  {
+    "name": "swift",
+    "url": "https://developer.apple.com/documentation/swift",
+    "icon": "./images/links/swift.png",
+    "section": "doc"
+  },
+  {
+    "name": "swiftUI",
+    "url": "https://developer.apple.com/documentation/swiftui",
+    "icon": "./images/links/swift.png",
+    "section": "doc"
+  },
+  {
+    "name": "flutter",
+    "url": "https://docs.flutter.dev/",
+    "icon": "./images/links/flutter.svg",
+    "section": "doc"
+  },
+  {
+    "name": "php",
+    "url": "https://www.php.net/manual/en/",
+    "icon": "./images/links/php.svg",
+    "section": "doc"
+  },
+
+  {
+    "name": "Slack",
+    "url": "https://app.slack.com/client/E018A0NHZNY/C06G48YRWUB",
+    "icon": "./images/links/slack.svg",
+    "section": "studio"
+  },
+  {
+    "name": "Trello",
+    "url": "https://trello.com/u/austinclifton/boards",
+    "icon": "./images/links/trello.svg",
+    "section": "studio"
+  },
+  {
+    "name": "Mermaid",
+    "url": "https://www.mermaidchart.com/app/dashboard",
+    "icon": "./images/links/mermaid.svg",
+    "section": "studio"
+  },
+  {
+    "name": "Figma",
+    "url": "https://www.figma.com/files/team/1156691374259165780/recents-and-sharing?fuid=1156691366469928423",
+    "icon": "./images/links/figma.svg",
+    "section": "studio"
+  },
+  {
+    "name": "Lucidchart",
+    "url": "https://lucid.app/documents#/home",
+    "icon": "./images/links/lucid.svg",
+    "section": "studio"
+  }
+]

@@ -1,0 +1,88 @@
+/** 
+ * Austin Clifton
+ * CSS for quick links widget
+ */
+
+.quickLinksContainer {
+    grid-row: 1/3;
+    grid-column: 4;
+    height: calc(325px + 2vh + 325px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 16px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.quickLinksContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.quickLinksContainer h2 {
+    display: flex;
+    align-items: start;
+    height: 25px;
+    margin: 0;
+    padding: 0 5px;
+    color: rgb(130, 205, 230);
+}
+
+.quickLinksContainer a {
+    text-decoration: none !important;
+}
+
+.linkBlock {
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    max-width: 100%;
+    height: 70px;
+    margin: 5px 0;
+    background: linear-gradient(to right, #0e0e0e, #010101);
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.linkBlock:hover {
+    background: rgb(50, 50, 50);
+}
+
+.linkIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    margin: 0 3%;
+}
+
+.linkName {
+    margin-left: 10px;
+    color: white;
+    font-size: 1.15em;
+}
+
+.linkUrl {
+    width: 100%;
+    color: rgb(169, 169, 169);
+    font-size: 0.6em;
+}
+
+.generalLinks,
+.schoolLinks,
+.workLinks,
+.codeLinks,
+.bankLinks,
+.gamesLinks,
+.emailLinks,
+.helpfulLinks,
+.projectLinks,
+.docLinks,
+.streamingLinks,
+.fantasyLinks,
+.studioLinks {
+    width: 100%;
+}
