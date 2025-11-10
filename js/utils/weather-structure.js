@@ -63,7 +63,6 @@ export function createWeatherStructure() {
     feelsLikeDiv.id = 'weatherFeelsLike';
     feelsLikeDiv.setAttribute('title', "Current 'Feels Like' Temperature");
     feelsLikeDiv.setAttribute('aria-label', 'Feels like temperature');
-    feelsLikeDiv.textContent = '~';
 
     const humidityIcon = document.createElement('img');
     humidityIcon.src = 'images/humidity.png';

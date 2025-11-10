@@ -64,10 +64,43 @@ function buildCurrentApiUrl(latitude, longitude) {
 }
 
 /**
- * Formats coordinates as a location string
+ * Gets location name from coordinates using OpenStreetMap Nominatim API
  */
-function formatLocation(latitude, longitude) {
-    return `${latitude.toFixed(4)}, ${longitude.toFixed(4)}`;
+async function getLocationName(latitude, longitude) {
+    try {
+        const response = await fetch(
+            `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}&zoom=10&addressdetails=1`,
+            {
+                headers: {
+                    'User-Agent': 'BrowserHome Weather Widget'
+                }
+            }
+        );
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+        
+        const data = await response.json();
+        if (data.address) {
+            const address = data.address;
+            // Format: "City, State" or "City, Country" if no state
+            if (address.city || address.town || address.village) {
+                const city = address.city || address.town || address.village;
+                if (address.state) {
+                    return `${city}, ${address.state}`;
+                } else if (address.country) {
+                    return `${city}, ${address.country}`;
+                }
+                return city;
+            } else if (address.state) {
+                return address.state;
+            } else if (address.country) {
+                return address.country;
+            }
+        }
+        return 'Location not found';
+    } catch (error) {
+        console.error('Error fetching location data:', error);
+        return 'Location unavailable';
+    }
 }
 
 /**
@@ -115,10 +148,13 @@ async function fetchWeather(latitude, longitude) {
         updateMetric('weatherWindSpeed', `${currentWeather.wind_speed_10m} ${windDirection}`, '', '', 'weatherData windSpeed');
         updateMetric('weatherUVIndex', hourlyWeather.uv_index_max[0], '', '', 'weatherData UVIndex');
 
-        // Update location coordinates (no className needed, just text)
-        const locationText = formatLocation(latitude, longitude);
+        // Update location name (no className needed, just text)
+        const locationName = await getLocationName(latitude, longitude);
+        const displayName = locationName.length > 15 
+            ? locationName.slice(0, 14) + '...' 
+            : locationName;
         const locationElement = document.getElementById('weatherLocation');
-        locationElement.textContent = locationText;
+        locationElement.textContent = displayName;
 
     } catch (error) {
         console.error('Error fetching weather data:', error);
