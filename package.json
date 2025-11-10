@@ -2,5 +2,6 @@
   "name": "browserhome",
   "version": "1.0.0",
   "description": "Personal browser home dashboard",
-  "private": true
+  "private": true,
+  "type": "module"
 }
