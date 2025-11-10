@@ -1,9 +1,13 @@
 /** 
- * Austin Clifton
  * Main CSS - Layout and base styles
+ * Handles global layout, header, container grid, and responsive breakpoints
  */
 
-/* Base body styles */
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+/* Global body styles - dark gradient background */
 body { 
     height: 100vh;
     margin: 0;
@@ -14,7 +18,11 @@ body {
     font-family: 'Kode Mono', monospace;
 }
 
-/* Header styles */
+/* ============================================
+   HEADER SECTION
+   ============================================ */
+
+/* Header container - flex layout for title and clock */
 .header {
     display: flex;
     justify-content: space-between;
@@ -22,12 +30,14 @@ body {
     padding: 3vh;
 }
 
+/* Typing animation container */
 #typingContainer {
     white-space: nowrap;
     color: white;
     overflow: hidden;
 }
 
+/* Welcome message title */
 #title { 
     margin: 1vh;
     color: white;
@@ -36,6 +46,7 @@ body {
     overflow: hidden;
 }
 
+/* Blinking cursor animation for typing effect */
 #blinkingCursor {
     display: inline-block;
     height: 6vh;
@@ -44,13 +55,18 @@ body {
     animation: blink 1.25s infinite;
 }
 
+/* Clock display */
 #clock {
     color: white;
     font-size: 3em;
     text-align: center;
 }
 
-/* Container for all widgets */
+/* ============================================
+   MAIN CONTAINER & WIDGETS
+   ============================================ */
+
+/* Main container - 4-column grid layout for desktop */
 .container {
     position: relative;
     display: grid;
@@ -61,7 +77,7 @@ body {
     margin: 0 2vw;
 }
 
-/* Base widget styles */
+/* Base widget styles - applied to all widget containers */
 .widget {
     height: 37.5vh;
     width: 350px;
@@ -71,18 +87,28 @@ body {
     box-shadow: 0px 0px 25px 0px rgba(255, 255, 255, 0.1);
 }
 
+/* Hide scrollbars for cleaner appearance */
 .widget::-webkit-scrollbar {
     display: none;
 }
 
-/* Animations */
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+/* Blinking cursor animation for typing effect */
 @keyframes blink {
     50% {
         opacity: 0;
     }
 }
 
-/* Responsive: Tablets and smaller (1300px and below) OR short height (700px and below) */
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================ */
+
+/* Tablet/Short Height: 2-column grid layout
+   Triggers when width ≤ 1300px OR height ≤ 700px */
 @media (max-width: 1300px), (max-height: 700px) {
     .header {
         flex-direction: column;
@@ -145,7 +171,7 @@ body {
     }
 }
 
-/* Responsive: Mobile (768px and below) */
+/* Mobile: Single column stack layout */
 @media (max-width: 900px) {
     .container {
         display: flex;
@@ -188,7 +214,7 @@ body {
     }
 }
 
-/* Responsive: Small mobile (480px and below) */
+/* Small Mobile: Reduced font sizes and padding */
 @media (max-width: 480px) {
     #title {
         font-size: 2em;

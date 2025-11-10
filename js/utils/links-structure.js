@@ -14,7 +14,6 @@ const SECTION_CONFIG = {
     work: 'work',
     banks: 'banks',
     streaming: 'streaming',
-    fantasy: 'fantasy',
     games: 'games',
     project: 'projects',
     helpful: 'helpful',

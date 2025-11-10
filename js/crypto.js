@@ -3,6 +3,8 @@
  * Fetches and displays cryptocurrency data
  */
 
+// Cryptocurrency IDs for CoinPaprika API (format: slug-id)
+// These correspond to: XRP, Bitcoin, Ethereum, Solana, USD Coin
 const cryptoIds = ['xrp-xrp', 'btc-bitcoin', 'eth-ethereum', 'sol-solana', 'usdc-usd-coin'];
 
 /**
@@ -82,7 +84,7 @@ function createCryptoBlock(data) {
         pricesDiv.appendChild(changeDiv);
     });
 
-    // Set background color class based on 24h change
+    // Set background color class based on 24h price change (green=positive, red=negative, gray=neutral)
     const change24h = data.quotes.USD.percent_change_24h;
     if (change24h < 0) {
         listBlock.classList.add('negative');
@@ -129,7 +131,8 @@ export async function initCrypto() {
     const banner = createCryptoBanner();
     cryptoContainer.appendChild(banner);
 
-    // Fetch crypto data
+    // Fetch crypto data for all currencies in parallel
+    // Using Promise.allSettled to handle individual failures gracefully
     try {
         const results = await Promise.allSettled(
             cryptoIds.map(id =>

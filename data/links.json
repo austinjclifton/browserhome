@@ -11,6 +11,12 @@
     "icon": "./images/links/youtube.png",
     "section": "general"
   },
+  {
+    "name": "espn",
+    "url": "https://www.espn.com/fantasy/",
+    "icon": "./images/links/espn.svg",
+    "section": "general"
+  },
 
   {
     "name": "gmail - ajclifton01",
@@ -107,7 +113,7 @@
   {
     "name": "sqlbolt",
     "url": "https://sqlbolt.com/",
-    "icon": "./images/links/sqlbolt.png",
+    "icon": "./images/links/sqlbolt.svg",
     "section": "code"
   },
   {
@@ -184,19 +190,6 @@
     "url": "https://www.citi.com/",
     "icon": "./images/links/citi.webp",
     "section": "banks"
-  },
-
-  {
-    "name": "sleeper",
-    "url": "https://sleeper.com/leagues/1223368749323653120/predraft",
-    "icon": "./images/links/sleeper.jpeg",
-    "section": "fantasy"
-  },
-  {
-    "name": "espn",
-    "url": "https://www.espn.com/fantasy/",
-    "icon": "./images/links/espn.svg",
-    "section": "fantasy"
   },
 
   {

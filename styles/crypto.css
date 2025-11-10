@@ -1,8 +1,13 @@
 /** 
- * Austin Clifton
- * CSS for crypto widget
+ * Crypto Widget Styles
+ * Styles for the cryptocurrency price display widget
  */
 
+/* ============================================
+   CRYPTO CONTAINER
+   ============================================ */
+
+/* Main crypto widget container - positioned in grid column 3, row 2 */
 .cryptoContainer {
     grid-row: 2;
     grid-column: 3;
@@ -17,11 +22,16 @@
     overflow-x: hidden;
 }
 
+/* ============================================
+   CRYPTO TABLE HEADER
+   ============================================ */
+
+/* Sticky header banner - stays visible while scrolling */
 .cryptoBanner {
     position: sticky;
     top: 0;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr; /* Symbol | Price | Changes */
     height: 35px;
     width: 100%;
     color: white;
@@ -31,9 +41,14 @@
     z-index: 5;
 }
 
+/* ============================================
+   CRYPTO ROW STYLES
+   ============================================ */
+
+/* Individual cryptocurrency row */
 .listBlock {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr; /* Symbol | Price | Changes */
     width: 100%;
     color: white;
     border: 2px solid black;
@@ -83,19 +98,30 @@
     font-size: 0.95em;
 }
 
-/* Background colors based on 24h change */
+/* ============================================
+   PRICE CHANGE COLORS
+   ============================================ */
+
+/* Green background for positive 24h price change */
 .listBlock.positive {
     background: #248c0d;
 }
 
+/* Red background for negative 24h price change */
 .listBlock.negative {
     background: #Ad2013;
 }
 
+/* Gray background for neutral/no 24h price change */
 .listBlock.neutral {
     background: gray;
 }
 
+/* ============================================
+   ERROR STATES
+   ============================================ */
+
+/* Error message display when API fails */
 .cryptoError {
     display: flex;
     flex-direction: column;
