@@ -111,6 +111,7 @@
 .projectLinks,
 .docLinks,
 .streamingLinks,
-.studioLinks {
+.studioLinks,
+.cardsLinks {
     width: 100%;
 }

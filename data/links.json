@@ -333,5 +333,18 @@
     "url": "https://lucid.app/documents#/home",
     "icon": "./images/links/lucid.svg",
     "section": "studio"
+  },
+
+  {
+    "name": "eBay",
+    "url": "https://www.ebay.com/",
+    "icon": "./images/links/ebay.svg",
+    "section": "cards"
+  },
+  {
+    "name": "PriceCharting",
+    "url": "https://www.pricecharting.com",
+    "icon": "./images/links/pricecharting.webp",
+    "section": "cards"
   }
 ]

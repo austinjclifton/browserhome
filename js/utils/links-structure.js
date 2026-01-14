@@ -9,16 +9,17 @@
 const SECTION_CONFIG = {
     general: 'general',
     email: 'email',
-    code: 'code',
     school: 'school',
     work: 'work',
+    code: 'code',
+    studio: 'studio software',
     banks: 'banks',
     streaming: 'streaming',
     games: 'games',
     project: 'projects',
     helpful: 'helpful',
     doc: 'documentations',
-    studio: 'studio software'
+    cards: 'cards'
 };
 
 /**
