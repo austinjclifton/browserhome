@@ -5,7 +5,7 @@
 
 // Cryptocurrency IDs for CoinPaprika API (format: slug-id)
 // These correspond to: XRP, Bitcoin, Ethereum, Solana, USD Coin
-//const cryptoIds = ['xrp-xrp', 'btc-bitcoin', 'eth-ethereum', 'sol-solana', 'usdc-usd-coin'];
+const cryptoIds = ['xrp-xrp', 'btc-bitcoin', 'eth-ethereum', 'sol-solana', 'usdc-usd-coin'];
 
 /**
  * Creates crypto banner
