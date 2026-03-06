@@ -62,6 +62,12 @@
     "section": "streaming"
   },
   {
+    "name": "buffstreams",
+    "url": "https://promax.fit/",
+    "icon": "./images/links/unknown.png",
+    "section": "streaming"
+  },
+  {
     "name": "sling",
     "url": "https://watch.sling.com/dashboard/home",
     "icon": "./images/links/sling.png",
