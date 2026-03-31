@@ -56,21 +56,9 @@
   },
 
   {
-    "name": "streameast",
-    "url": "https://v2.streameast.ga/",
-    "icon": "./images/links/streameast.png",
-    "section": "streaming"
-  },
-  {
-    "name": "buffstreams",
-    "url": "https://promax.fit/",
+    "name": "sportsbite",
+    "url": "https://sportsbite.sbs/live",
     "icon": "./images/links/unknown.png",
-    "section": "streaming"
-  },
-  {
-    "name": "sling",
-    "url": "https://watch.sling.com/dashboard/home",
-    "icon": "./images/links/sling.png",
     "section": "streaming"
   },
   {
