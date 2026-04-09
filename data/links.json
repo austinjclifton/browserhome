@@ -149,9 +149,9 @@
     "section": "work"
   },
   {
-    "name": "glassdoor",
-    "url": "https://profile.indeed.com/?hl=en_US&co=US&from=gnav-homepage",
-    "icon": "./images/links/glassdoor.svg",
+    "name": "wellfound",
+    "url": "https://wellfound.com/jobs",
+    "icon": "./images/links/wellfound.svg",
     "section": "work"
   },
   {
@@ -208,6 +208,18 @@
   {
     "name": "Penn. Voter StoryMap",
     "url": "https://storymaps.arcgis.com/stories/f7acca3d29844562861fde45688bdbc7",
+    "icon": "./images/links/pennsylvania.png",
+    "section": "project"
+  },
+  {
+    "name": "Geography of Olympians StoryMap",
+    "url": "https://storymaps.arcgis.com/stories/b95f624088e14afeb59d7542274c4829",
+    "icon": "./images/links/pennsylvania.png",
+    "section": "project"
+  },
+  {
+    "name": "Who Can Afford NYC StoryMap",
+    "url": "https://storymaps.arcgis.com/stories/6c54d9b7666c4ca7950f33a8e355a1fc",
     "icon": "./images/links/pennsylvania.png",
     "section": "project"
   },
