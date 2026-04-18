@@ -131,6 +131,12 @@
   },
 
   {
+    "name": "teal",
+    "url": "https://app.tealhq.com/job-tracker/",
+    "icon": "./images/links/teal.svg",
+    "section": "work"
+  },
+  {
     "name": "linkedin",
     "url": "https://www.linkedin.com/in/austinjclifton/",
     "icon": "./images/links/linkedin.svg",
