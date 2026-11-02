@@ -12,21 +12,16 @@
     "section": "general"
   },
   {
-    "name": "espn",
-    "url": "https://www.espn.com/fantasy/",
-    "icon": "./images/links/espn.svg",
+    "name": "github",
+    "url": "https://github.com/austinjclifton",
+    "icon": "./images/links/github.svg",
     "section": "general"
   },
+
 
   {
     "name": "gmail - ajclifton01",
     "url": "https://mail.google.com/mail/u/0/#inbox",
-    "icon": "./images/links/gmail.svg",
-    "section": "email"
-  },
-  {
-    "name": "gmail - ajc4409",
-    "url": "https://mail.google.com/mail/u/1/#inbox",
     "icon": "./images/links/gmail.svg",
     "section": "email"
   },
@@ -55,12 +50,8 @@
     "section": "email"
   },
 
-  {
-    "name": "sportsbite",
-    "url": "https://sportsbite.sbs/live",
-    "icon": "./images/links/unknown.png",
-    "section": "streaming"
-  },
+
+
   {
     "name": "peacock",
     "url": "https://www.peacocktv.com/watch/home",
@@ -86,49 +77,7 @@
     "section": "streaming"
   },
 
-  {
-    "name": "github",
-    "url": "https://github.com/austinjclifton",
-    "icon": "./images/links/github.svg",
-    "section": "code"
-  },
-  {
-    "name": "exercism",
-    "url": "https://exercism.org/dashboard",
-    "icon": "./images/links/exercism.svg",
-    "section": "code"
-  },
-  {
-    "name": "jschallenger",
-    "url": "https://jschallenger.com/dashboard/",
-    "icon": "./images/links/code.png",
-    "section": "code"
-  },
-  {
-    "name": "sqlbolt",
-    "url": "https://sqlbolt.com/",
-    "icon": "./images/links/sqlbolt.svg",
-    "section": "code"
-  },
-  {
-    "name": "leetcode",
-    "url": "https://leetcode.com/problemset/",
-    "icon": "./images/links/leetcode.png",
-    "section": "code"
-  },
 
-  {
-    "name": "myCourses",
-    "url": "https://mycourses.rit.edu/d2l/home",
-    "icon": "./images/rit.svg",
-    "section": "school"
-  },
-  {
-    "name": "SIS - RIT",
-    "url": "https://campus.ps.rit.edu/psc/RITXCPRD/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL?",
-    "icon": "./images/rit.svg",
-    "section": "school"
-  },
 
   {
     "name": "teal",
@@ -160,12 +109,8 @@
     "icon": "./images/links/wellfound.svg",
     "section": "work"
   },
-  {
-    "name": "career connect rit",
-    "url": "https://rit-csm.symplicity.com/students/app/jobs/discover",
-    "icon": "./images/rit.svg",
-    "section": "work"
-  },
+
+  
 
   {
     "name": "coinbase",
